@@ -16,7 +16,7 @@ Installation
 
   1. Install [VirtualBox](https://www.virtualbox.org/)
   2. Install [Vagrant](https://www.vagrantup.com/)
-  3. Clone or [download](https://gitlab.ripe.net/lnd/ipv6-security-lab/-/archive/ipv6_security/ipv6-security-lab-ipv6_security.zip) and unpack ZIP of this repository somewhere
+  3. Clone or [download](https://github.com/oskar456/vagrant-netlab-ipv6security/releases/latest/) and unpack ZIP of this repository somewhere
   4. Open a terminal window, enter the cloned repository (using `cd` command) directory and run `vagrant up`
   5. Wait a few minutes until vagrant finishes the preparation. Several hundred
 megabytes will be downloaded during the process.
