@@ -11,9 +11,10 @@ networks:
   name: lxdbr0
 storage_pools:
 - config:
+    size: 15G
   description: ""
   name: default
-  driver: dir
+  driver: btrfs
 profiles:
 - config: {}
   description: ""
