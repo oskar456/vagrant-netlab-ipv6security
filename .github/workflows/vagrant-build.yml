@@ -1,0 +1,35 @@
+name: Build a release
+# Source: https://github.com/jonashackt/vagrant-github-actions
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  vagrant-up:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Cache Vagrant boxes
+        uses: actions/cache@v2
+        with:
+          path: ~/.vagrant.d/boxes
+          key: ${{ runner.os }}-vagrant-${{ hashFiles('Vagrantfile') }}
+          restore-keys: |
+            ${{ runner.os }}-vagrant-
+
+      - name: Show Vagrant version
+        run: vagrant --version
+
+      - name: Run `vagrant up`
+        run: vagrant up
+
+      - name: Build vagrant box
+        run: vagrant package --vagrantfile Vagrantfile-in-box --output ipv6-security-lab-$(cat version.txt).box
+
+      - name: Store generated box file
+        uses: actions/upload-artifact@v2
+        with:
+          name: vagrant-box
+          path: "ipv6-security-lab-*.box"
