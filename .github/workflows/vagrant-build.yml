@@ -1,9 +1,9 @@
 name: Build a release
 # Source: https://github.com/jonashackt/vagrant-github-actions
 on:
-  release:
-    types:
-      - published
+  push:
+    branches-ignore: # Run only on tags
+      - '*'
   workflow_dispatch:
 
 jobs:
