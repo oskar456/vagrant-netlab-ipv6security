@@ -3,7 +3,7 @@ name: Build a release
 on:
   release:
     types:
-      - created
+      - published
   workflow_dispatch:
 
 jobs:
