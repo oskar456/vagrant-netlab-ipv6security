@@ -1,5 +1,12 @@
 # Changelog
 
+### [0.20210507.7](https://www.github.com/oskar456/vagrant-netlab-ipv6security/compare/v0.20210507.6...v0.20210507.7) (2021-05-10)
+
+
+### Bug Fixes
+
+* GH action: run build on tags starting v ([8e4262b](https://www.github.com/oskar456/vagrant-netlab-ipv6security/commit/8e4262b661c235dba48c10a2925fa0f57efa159c))
+
 ### [0.20210507.6](https://www.github.com/oskar456/vagrant-netlab-ipv6security/compare/v0.20210507.5...v0.20210507.6) (2021-05-10)
 
 
