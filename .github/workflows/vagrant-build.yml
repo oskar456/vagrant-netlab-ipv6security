@@ -1,7 +1,11 @@
 name: Build a release
 # Source: https://github.com/jonashackt/vagrant-github-actions
 on:
-  release:
+  push:
+    branches:
+      - main
+    paths:
+      - 'version.txt'
   workflow_dispatch:
 
 jobs:
