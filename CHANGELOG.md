@@ -1,5 +1,12 @@
 # Changelog
 
+### [0.20210507.5](https://www.github.com/oskar456/vagrant-netlab-ipv6security/compare/v0.20210507.4...v0.20210507.5) (2021-05-10)
+
+
+### Bug Fixes
+
+* run GH action on every release ([1bcf513](https://www.github.com/oskar456/vagrant-netlab-ipv6security/commit/1bcf51366a98555cebd65192f6739bc4b5dcc76a))
+
 ### [0.20210507.4](https://www.github.com/oskar456/vagrant-netlab-ipv6security/compare/v0.20210507.3...v0.20210507.4) (2021-05-10)
 
 
